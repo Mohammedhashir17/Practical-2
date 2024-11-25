@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ashoka-chakra {
+    display: inline-block;
+    margin: 20px;
+    }
+
+    .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #00698f; /* Navy blue color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .spokes {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    .spoke {
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: #fff; /* White color */
+    transform-origin: 50% 100%;
+    animation: rotate 2s linear infinite;
+    }
+
+    .spoke:nth-child(odd) {
+    transform: rotate(22.5deg);
+    }
+
+    .spoke:nth-child(even) {
+    transform: rotate(-22.5deg);
+    }
+
+    @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+    </style>
+
+</head>
+<body>
+    <div class="ashoka-chakra">
+        <div class="circle">
+          <div class="spokes">
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+            <div class="spoke"></div>
+          </div>
+        </div>
+      </div>    
+</body>
+</html>

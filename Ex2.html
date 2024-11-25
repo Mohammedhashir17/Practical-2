@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Map Example</title>
+	<style>
+		/* Global Styles */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0; /* light gray background */
+		}
+		
+		h1 {
+			color: #00698f; /* blue color for headings */
+			margin-bottom: 20px;
+		}
+		
+		p {
+			margin-bottom: 20px;
+		}
+		
+		/* Image Map Styles */
+		img[usemap] {
+			border: none;
+			width: 800px;
+			height: 600px;
+			margin: 20px auto;
+			display: block;
+		}
+		
+		area:hover {
+			cursor: pointer;
+		}
+		
+		/* Tooltip Styles */
+		.tooltip {
+			position: absolute;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-radius: 10px;
+			display: none;
+		}
+		
+		area:hover + .tooltip {
+			display: block;
+		}
+		
+		/* Responsive Design */
+		@media only screen and (max-width: 800px) {
+			img[usemap] {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Image Map Example</h1>
+	
+	<!-- The image map -->
+	<img src="C:\Users\Md Hashir\Desktop\AWD\imagemap.png" alt="Image Map" usemap="#imagemap" width="800" height="600">
+
+		
+	<map name="imagemap">
+		<area target="" alt="Google" title="Google" href="https://www.google.com" coords="739,200" shape="poly">
+		<area target="" alt="Geeks for Geeks" title="Geeks for Geeks" href="https://www.geeksforgeeks.com" coords="NaN" shape="circle">
+		<area target="" alt="Crescent" title="Crescent" href="https://www.crescent.education" coords="" shape="rect">
+	</map>
+	
+	<p>Click on the different areas of the image to visit different websites.</p>
+</body>
+</html>		

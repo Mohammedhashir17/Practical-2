@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Information Form</title>
+	<style>
+		/* Add some basic styling to make the form look decent */
+		body {
+			font-family: 'Times New Roman', Times, serif;
+			background-color: #f0f0f0;
+		}
+		
+		.form-container {
+			width: 600px;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form-header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+			border-radius: 10px 10px 0 0;
+		}
+		
+		.form-header h2 {
+			margin: 0;
+		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}
+		
+		.form-label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.form-input {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		.form-input:focus {
+			border-color: #aaa;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form-button {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.form-button:hover {
+			background-color: #444;
+		}
+	</style>
+</head>
+<body>
+	<div class="form-container">
+		<div class="form-header">
+			<h2>Personal Information Form</h2>
+		</div>
+		<form>
+			<div class="form-group">
+				<label class="form-label" for="name">Name:</label>
+				<input class="form-input" type="text" id="name" placeholder="Enter your name">
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="dob">Date of Birth:</label>
+				<input class="form-input" type="date" id="dob" placeholder="Enter your date of birth">
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="gender">Gender:</label>
+				<select class="form-input" id="gender">
+					<option value="">Select</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="rrn">Roll Number:</label>
+				<input class="form-input" type="text" id="rrn" placeholder="Enter your roll number">
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="department">Department:</label>
+				<input class="form-input" type="text" id="department" placeholder="Enter your department">
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="college">College Name:</label>
+				<input class="form-input" type="text" id="college" placeholder="Enter your college name">
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="email">Email ID:</label>
+				<input class="form-input" type="email" id="email" placeholder="Enter your email ID">
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="mobile">Mobile Number:</label>
+				<input class="form-input" type="tel" id="mobile" placeholder="Enter your mobile number">
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="nationality">Nationality:</label>
+				<input class="form-input" type="text" id="nationality" placeholder="Enter your nationality">
+			</div>
+			<button class="form-button" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
